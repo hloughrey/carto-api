@@ -39,5 +39,9 @@ npm run start
 
 ### Endpoints
 
-GET http://localhost:3000/api/table/:tableFQN?geoColumn=geom
-GET http://localhost:3000/api/tiles/:tableFQN/:z/:x/:y
+BaseUrl: `http://localhost:3000/api`
+
+| Verb | Controller                        |
+| ---- | --------------------------------- |
+| GET  | `/table/:tableFQN?geoColumn=geom` |
+| GET  | `/tiles/:tableFQN/:z/:x/:y`       |
