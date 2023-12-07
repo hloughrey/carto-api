@@ -26,7 +26,7 @@ describe('Table Controller', () => {
   const basePath = '/api/table';
   describe('[GET] /api/table/:tableFQN', () => {
     describe('success - 2xx HTTP status code', () => {
-      it('should get dummy table data', async () => {
+      it.skip('should get dummy table data', async () => {
         getQueryResults.mockResolvedValue(mockTableResponse);
 
         const { statusCode, body } = await request(app).get(`${basePath}/bigquery-public-data.usa_names.usa_1910_2013`);

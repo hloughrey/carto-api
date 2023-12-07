@@ -13,6 +13,7 @@ Carto API
 - [Summary](#summary)
 - [Getting started](#getting-started)
   - [Development](#development)
+  - [Endpoints](#endpoints)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -35,3 +36,8 @@ npm i
 cp .env.template .env
 npm run start
 ```
+
+### Endpoints
+
+GET http://localhost:3000/api/table/:tableFQN?geoColumn=geom
+GET http://localhost:3000/api/tiles/:tableFQN/:z/:x/:y

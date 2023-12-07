@@ -1,6 +1,4 @@
 import { Logger } from 'winston';
-// import axios from 'axios';
-// import { TableResponseDto } from './tiles.types';
 
 export async function getTile(logger: Logger, authToken: string, { tilesetFQN, z, x, y }) {
   logger.info(`Getting tile: z:${z} x:${x} y:${y} from ${tilesetFQN}`);
